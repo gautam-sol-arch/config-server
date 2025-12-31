@@ -24,3 +24,5 @@ eureka:
 gateway:
   security:
     internal-secret: GATEWAY_SECRET_123
+jwt:
+  secret: h9KQeY7+u3ZKJ7q5Q+7+5fQyR2hQZ2z3r0C5FZkH4aE=
