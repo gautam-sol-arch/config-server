@@ -1,1 +1,8 @@
+server:
+  port: 8084
 
+spring:
+  application:
+    name: card-service
+  datasource:
+    url: jdbc:h2:file:D:/Users/T0254432/carddb;DB_CLOSE_ON_EXIT=FALSE
