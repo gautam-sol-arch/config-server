@@ -1,5 +1,26 @@
 spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/yourusername/config-repo.git
+          username: gautam-sol-arch
+          password: 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
+          default-lebel: main
   datasource:
-    url: jdbc:h2:mem:testdb
-    username: sa
-    password:
+    driverClassName: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+gateway:
+  security:
+    internal-secret: GATEWAY_SECRET_123
