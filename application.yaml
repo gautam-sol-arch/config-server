@@ -9,6 +9,8 @@ spring:
           default-lebel: main
   datasource:
     driverClassName: org.h2.Driver
+    username: sa
+    password: ''
   h2:
     console:
       enabled: true
