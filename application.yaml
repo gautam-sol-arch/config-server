@@ -19,7 +19,7 @@ eureka:
 # Security Configuration
 security:
   jwt:
-    secret: ${JWT_SECRET} # Should be the same across all services
+    secret: ${JWT_SECRET:h9KQeY7+u3ZKJ7q5Q+7+5fQyR2hQZ2z3r0C5FZkH4aE=} # Should be the same across all services
     expiration-ms: 86400000 # 24 hours
   cors:
     allowed-origins: "http://localhost:3000,http://localhost:8080"
